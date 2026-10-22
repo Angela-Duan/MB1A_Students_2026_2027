@@ -1,0 +1,40 @@
+---
+title: "MB1A Practical 1 part 3"
+author: "Angela Duan"
+---
+Round 3.14159 to the nearest whole number
+```{r}
+round(3.14159)
+round(3.14159, digits = 2)
+```
+Ordering arguments
+```{r}
+print(rep(5,7))
+print(rep(times=7,x=5))
+```
+```{r}
+my_variable <- 12
+my_variable <- 10
+print(my_variable)
+```
+Identifying types of variables
+```{r}
+x<- "hi there"
+print(class(x))
+```
+Exercise - Using variables of different types
+```{r}
+cell_ID_1<-"CX1"
+cell_ID_2<-"CX2"
+
+treated_1<-TRUE
+treated_2<-FALSE
+
+n_before_1<-5415
+n_before_2<-8123
+
+n_after_1<-1432
+n_after_2<-7543
+```
+
+
