@@ -1,0 +1,26 @@
+---
+title: "UKHSA Data Analysis"
+author: "Angela Duan"
+---
+```{r}
+library(tidyverse)
+library(gt)
+```
+
+In this section I load CSV data from the UKHSA data portal on the "Weekly positivity of people receiving a PCR test" for influenza.
+```{r}
+influenza <- read_csv("data/ukhsa-chart-download-influenza.csv")
+
+gt(head(influenza))
+```
+Plotting the data
+```{r}
+ggplot(influenza, aes(
+  x = date,
+  y = metric_value
+)) +
+  geom_line(colour = "blue") +
+  xlab("Date") +
+  ylab("Weekly Positivity") +
+  ggtitle("Weekly Positivity of People Receiving a PCR Test for Influenza")
+```
